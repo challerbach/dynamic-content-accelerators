@@ -19,11 +19,11 @@
     if (sDefault) return sDefault;
   };
 
-  var vse = getUrlParameter('vse', 'kpszurrose.cdn.content.amplience.net');
+  var vse = getUrlParameter('vse', 'challerbachdemo.cdn.content.amplience.net/');
   var crsvse = getUrlParameter('vse', 'c1-orig.adis.ws');
-  var key = getUrlParameter('key', 'zurrosepoc/web/home');
-  var menukey = getUrlParameter('menukey', 'zurrosepoc/web/navigation');
-  var locale = getUrlParameter('locale', 'de-DE,*-CH');
+  var key = getUrlParameter('key', '/web/home');
+  var menukey = getUrlParameter('menukey', '/web/navigation');
+  var locale = getUrlParameter('locale', 'de-DE,en-GB,*');
   var cid = getUrlParameter('cid');
   var timestamp = getUrlParameter('timestamp');
   var segmentParam = getUrlParameter('segment');
@@ -162,7 +162,7 @@
 
         /** */
         clientV1
-          .renderContentItem(renderID,'templateChooser')
+          .renderContentItem(renderID,'template-ch-Chooser')
           .then(response => {
             console.log(response.body);
             document.getElementById(container).innerHTML = response.body;

@@ -1,117 +1,117 @@
 {{#if (test this.[@type] (toRegex ".*/text.json")) ~}}
-{{> amp-template-text }}
+{{> amp-template-ch-text }}
 {{~/if}}
 
 {{#if (test this.[@type] (toRegex ".*/rich-text.json")) ~}}
-{{> amp-template-rich-text }}
+{{> amp-template-ch-rich-text }}
 {{~/if}}
 
 {{#if (test this.[@type] (toRegex ".*/video.json")) ~}}
-{{> amp-template-video }}
+{{> amp-template-ch-video }}
 {{~/if}}
 
 {{#if (test this.[@type] (toRegex ".*/promo-list.json")) ~}}
-{{> amp-template-promo-list }}
+{{> amp-template-ch-promo-list }}
 {{~/if}}
 
 {{#if (test this.[@type] (toRegex ".*/promo.json")) ~}}
-{{> amp-template-promo }}
+{{> amp-template-ch-promo }}
 {{~/if}}
 
 {{#if (test this.[@type] (toRegex ".*/split-block.json")) ~}}
-{{> amp-template-split-block }}
+{{> amp-template-ch-split-block }}
 {{~/if}}
 
 {{#if (test this.[@type] (toRegex ".*/slider.json")) ~}}
-{{> amp-template-slider }}
+{{> amp-template-ch-slider }}
 {{~/if}}
 
 {{#if (test this.[@type] (toRegex ".*/image.json")) ~}}
-{{> amp-template-image this}}
+{{> amp-template-ch-image this}}
 {{~/if}}
 
 {{#if (test this.[0].[@type] (toRegex ".*/image.json")) ~}}
-{{> amp-template-image this.[0]}}
+{{> amp-template-ch-image this.[0]}}
 {{~/if}}
 
 {{#if (test this.[@type] (toRegex ".*/external-block.json")) ~}}
-{{> amp-template-external-block }}
+{{> amp-template-ch-external-block }}
 {{~/if}}
 
 {{#if (test this.[@type] (toRegex ".*/card-list.json")) ~}}
-{{> amp-template-card-list }}
+{{> amp-template-ch-card-list }}
 {{~/if}}
 
 {{#if (test this.[@type] (toRegex ".*/card.json")) ~}}
-{{> amp-template-card }}
+{{> amp-template-ch-card }}
 {{~/if}}
 
 {{#if (test this.[@type] (toRegex ".*/blog-post.json")) ~}}
-{{> amp-template-blog-post }}
+{{> amp-template-ch-blog-post }}
 {{~/if}}
 
 {{#if (test this.[@type] (toRegex ".*/blog-list.json")) ~}}
-{{> amp-template-blog-list }}
+{{> amp-template-ch-blog-list }}
 {{~/if}}
 
 {{#if (test this.[@type] (toRegex ".*/banner.json")) ~}}
-{{> amp-template-banner }}
+{{> amp-template-ch-banner }}
 {{~/if}}
 
 {{#if (test this.[@type] (toRegex ".*/page.json")) ~}}
-{{> amp-template-page }}
+{{> amp-template-ch-page }}
 {{~/if}}
 
 {{#if (test this.[@type] (toRegex ".*/advanced-banner.json")) ~}}
-{{> amp-template-advanced-banner }}
+{{> amp-template-ch-advanced-banner }}
 {{~/if}}
 
 {{#if (test this.[@type] (toRegex ".*/curated-product-list.json")) ~}}
-{{> amp-template-curated-product-list }}
+{{> amp-template-ch-curated-product-list }}
 {{~/if}}
 
 {{#if (test this.[@type] (toRegex ".*/simple-image-banner-localised.json")) ~}}
-{{> amp-template-simple-image-banner-localised }}
+{{> amp-template-ch-simple-image-banner-localised }}
 {{~/if}}
 {{#if (test this.[@type] (toRegex ".*/simple-image-banner.json")) ~}}
-{{> amp-template-simple-image-banner }}
+{{> amp-template-ch-simple-image-banner }}
 {{~/if}}
 
 {{#if (test this.[@type] (toRegex ".*/navigation.json")) ~}}
-{{> amp-template-navigation }}
+{{> amp-template-ch-navigation }}
 {{~/if}}
 
 {{#if (test this.[@type] (toRegex ".*/title.json")) ~}}
-{{> amp-template-title }}
+{{> amp-template-ch-title }}
 {{~/if}}
 
-{{#if (test this.[@type] (toRegex ".*/collection.json")) ~}} {{> amp-template-collection }} {{~/if}}
-{{#if (test this.[@type] (toRegex ".*/collection-block.json")) ~}} {{> amp-template-collection-block }} {{~/if}}
+{{#if (test this.[@type] (toRegex ".*/collection.json")) ~}} {{> amp-template-ch-collection }} {{~/if}}
+{{#if (test this.[@type] (toRegex ".*/collection-block.json")) ~}} {{> amp-template-ch-collection-block }} {{~/if}}
 
 
 {{#if (test this.[@type] (toRegex ".*/slot.json")) ~}}
     {{#each this.content}}
-        {{> templateChooser this }}
+        {{> template-ch-Chooser this }}
     {{/each}}
 {{~/if}}
 
 {{#if (test this.[@type] (toRegex ".*/localised-slot.json")) ~}}
     {{#each this.content}}
-        {{> templateChooser this }}
+        {{> template-ch-Chooser this }}
     {{/each}}
 {{~/if}}
 
 {{#if (test this.[@type] (toRegex ".*/map.json")) ~}}
     {{#each this.content}}
-        {{> templateChooser this }}
+        {{> template-ch-Chooser this }}
     {{/each}}
 {{~/if}}
 
 {{#if (test this.[@type] (toRegex ".*/navigation-slot.json")) ~}}
-    {{> templateChooser navigation }}
+    {{> template-ch-Chooser navigation }}
 {{~/if}}
 {{#if (test this.[@type] (toRegex ".*/localised-navigation-slot.json")) ~}}
-    {{> templateChooser navigation }}
+    {{> template-ch-Chooser navigation }}
 {{~/if}}
 
 {{#if (test this.[@type] (toRegex ".*/email-banner")) ~}} {{> banner }} {{~/if}}

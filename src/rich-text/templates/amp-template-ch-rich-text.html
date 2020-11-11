@@ -4,7 +4,7 @@
 		{{{markdown this.data}}}
 	</div>
 	 {{~/if}}
-	{{#if (test type (toRegex "dc-content-link")) ~}} {{> templateChooser this.data}} {{~/if}}
+	{{#if (test type (toRegex "dc-content-link")) ~}} {{> template-ch-Chooser this.data}} {{~/if}}
 	{{#if (test type (toRegex "dc-image-link")) ~}}
 		<picture class="amp-dc-image">
 			<img src="//{{data.defaultHost}}/i/{{data.endpoint}}/{{encodeURI data.name}}?upscale=false&strip=true" class="amp-dc-image-pic"/>
