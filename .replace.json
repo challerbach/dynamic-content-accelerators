@@ -4,7 +4,7 @@
   "VISUALIZATIONS": [
     {
       "label": "Visualization",
-      "templatedUri": "https://{{vse.domain}}/v1/content/demo/content-item/{{content.sys.id}}?template=amp-template-visualization&locale={{locales}},en-*,*",
+      "templatedUri": "https://{{vse.domain}}/v1/content/demo/content-item/{{content.sys.id}}?template=amp-template-ch-visualization&locale={{locales}},en-*,*",
       "default": true
     },
     {
